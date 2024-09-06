@@ -1,6 +1,6 @@
-import {createStore, combineReducers, applyMiddleware} from 'redux';
+import {legacy_createStore as createStore, combineReducers, applyMiddleware} from 'redux';
 import {thunk} from 'redux-thunk';
-import { composeWithDevTools } from 'redux-devtools-extension';
+import { composeWithDevTools } from 'remote-redux-devtools';
 import { userLoginReducer, userRegisterReducer, userUpdateReducer } from './reducers/userReducers';
 import { noteCreateReducer, noteDeleteReducer, noteListReducers, noteUpdateReducer } from './reducers/noteReducers';
 
